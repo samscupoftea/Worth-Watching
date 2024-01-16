@@ -1,0 +1,26 @@
+body {
+    font-family: Arial, sans-serif;
+    text-align: center;
+    padding: 20px;
+}
+
+.container {
+    margin-top: 50px;
+}
+
+input[type="text"] {
+    font-size: 20px;
+    padding: 5px;
+}
+
+button {
+    font-size: 20px;
+    padding: 10px 20px;
+    margin-left: 10px;
+}
+
+#results {
+    margin-top: 20px;
+    text-align: left;
+    display: none; /* Hidden by default */
+}

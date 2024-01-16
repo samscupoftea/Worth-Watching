@@ -16,3 +16,15 @@ app.get('/api/data/', (req, res) => {
     //Return that data in JSON format
     res.json({ date: "Sample Data "});
 });
+
+
+// Example using Express.js
+app.get('/search-movie', (req, res) => {
+    const movieName = req.query.name;
+    // Use movie API to fetch data
+    // For example, using a hypothetical movie API
+    fetch('https://api.examplemovie.com/search?query=' + movieName)
+        .then(apiResponse => apiResponse.json())
+        .then(data => res.json(data))
+        .catch(error => res.status(500).json({ error: 'Error fetching data' }));
+});
