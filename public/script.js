@@ -1,3 +1,6 @@
+
+// add funtionality for a button 
+
 document.getElementById('searchButton').addEventListener('click', function() {
     var movieName = document.getElementById('movieName').value;
     if (movieName) {
