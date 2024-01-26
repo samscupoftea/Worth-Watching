@@ -10,6 +10,7 @@ searchBtn.addEventListener("click", () => {
 
         fetch(finalURL)
             .then(response => response.json())
+            .then(json => console.log(json))
             .then(data => {
                 console.log(JSON.stringify(data, null, 2)); // You need to define this function
             })
